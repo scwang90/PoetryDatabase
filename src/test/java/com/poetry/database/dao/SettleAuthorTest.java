@@ -6,20 +6,20 @@ import java.io.PrintStream;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.poetry.database.feature.SettleTitle;
+import com.poetry.database.feature.SettleAuthor;
 
-public class SettleTitleTest {
+public class SettleAuthorTest {
 
-	private SettleTitle settle;
+	private SettleAuthor settle;
 
 	@Before
 	public void init(){
-		settle = new SettleTitle();
+		settle = new SettleAuthor();
 	}
 	
 	@Test
 	public void settleTest() throws FileNotFoundException, Exception{
-		PrintStream out = new PrintStream("target/settle.titles.java");
+		PrintStream out = new PrintStream("target/settle.authors.java");
 		settle.settle(out);
 		out.close();
 	}

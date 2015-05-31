@@ -162,4 +162,27 @@ public class AfCharset {
 		String s = new String("中文".getBytes("UTF-8"), "UTF-8");
 		System.out.println(s);
 	}
+	
+	
+	/**
+	 * 混淆
+	 * @param bytes
+	 */
+	public static void mixup(byte[] bytes) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < bytes.length; i++) {
+			bytes[i] = (byte) ((bytes[i] + (100*(i&1)-50))%256);
+		}
+	}
+
+	/**
+	 * 饭混淆
+	 * @param bytes
+	 */
+	public static void mixdown(byte[] bytes) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < bytes.length; i++) {
+			bytes[i] = (byte) ((bytes[i] - (100*(i&1)-50))%256);
+		}
+	}
 }
