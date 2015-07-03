@@ -64,8 +64,8 @@ public class BaseDaoDbUtilImpl<T> implements MultiDao<T>{
 		beanListHandler = new BeanListHandler<T>(clazz,new BasicRowProcessorTemplate<T>(clazz));
 		model = loadModel(clazz);
 	}
+
 	/**
-	 * 
 	 * @param clazz
 	 * @return
 	 */
@@ -105,6 +105,7 @@ public class BaseDaoDbUtilImpl<T> implements MultiDao<T>{
 		buffer.setLength(buffer.length()-1);
 		return buffer.toString();
 	}
+
 	/**
 	 * 根据 fields 拼出 insert table(${column}) 
 	 * insert into table(name,sex) values(${values})
@@ -121,6 +122,7 @@ public class BaseDaoDbUtilImpl<T> implements MultiDao<T>{
 		buffer.setLength(buffer.length()-1);
 		return buffer.toString();
 	}
+
 	/**
 	 * 根据T的数据拼出 update set name='hello',sex=false 对应的  set string
 	 * @param fields 
@@ -138,6 +140,7 @@ public class BaseDaoDbUtilImpl<T> implements MultiDao<T>{
 		buffer.setLength(buffer.length()-1);
 		return buffer.toString();
 	}
+
 	/**
 	 * 根据T的数据拼出 insert values(?,?,?,?) 对应的  Object[]
 	 * @param t
@@ -169,6 +172,7 @@ public class BaseDaoDbUtilImpl<T> implements MultiDao<T>{
 		}
 		return list;
 	}
+
 	/**
 	 * 获取对象 t 的 Id
 	 * @param t

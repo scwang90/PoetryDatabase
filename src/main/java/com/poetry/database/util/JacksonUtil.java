@@ -15,7 +15,6 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
 
 /**
  * Helper class for parsing to and from json for API calls
- * 
  * @author s0pau
  */
 public class JacksonUtil {
@@ -25,7 +24,6 @@ public class JacksonUtil {
 	// TODO use annotations to metaprogram the parsing behaviour instead
 	/**
 	 * Get the list of model objects and create json as expected by the API.
-	 * 
 	 * @param isUpdate
 	 *            parse object to body suitable for updates if true; for
 	 *            creates, otherwise

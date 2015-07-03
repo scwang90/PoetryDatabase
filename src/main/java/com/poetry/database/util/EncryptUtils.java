@@ -2,8 +2,7 @@ package com.poetry.database.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 /**
- * 
- * @author SCWANG
+ * @author 树朾
  */
 public class EncryptUtils {  
     /** 

@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import com.poetry.database.util.AfCharset;
 /**
  * 藏头诗数据库压缩
- * @author SCWANG
+ * @author 树朾
  */
 public class PoetryReduce {
 	/**

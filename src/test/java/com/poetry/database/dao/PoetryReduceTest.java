@@ -8,11 +8,11 @@ import org.junit.Test;
 import com.poetry.database.feature.PoetryReduce;
 /**
  * 藏头诗数据库压缩
- * @author SCWANG
+ * @author 树朾
  */
 /**
  * 藏头诗数据库压缩
- * @author SCWANG
+ * @author 树朾
  */
 public class PoetryReduceTest {
 	

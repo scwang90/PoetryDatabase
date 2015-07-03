@@ -55,6 +55,7 @@ public class Settle {
 		}
 		print.close();
 	}
+
 	/**
 	 * 拆分对象
 	 * @param out
@@ -84,6 +85,7 @@ public class Settle {
 		out.println("}\r\n");
 		return targets;
 	}
+
 	/**
 	 * 去掉太长的对象
 	 * @param out
@@ -104,6 +106,7 @@ public class Settle {
 		out.println("}\r\n");
 		return targets;
 	}
+
 	/**
 	 * 排除重复
 	 * @param out
@@ -121,6 +124,7 @@ public class Settle {
 		out.println("}\r\n");
 		return targets;
 	}
+
 	/**
 	 * 替换指定文字为空
 	 * @param out
@@ -155,6 +159,7 @@ public class Settle {
 		out.println("}\r\n");
 		return targets;
 	}
+
 	/**
 	 * 去掉包含指定文字的对象
 	 * @param out
@@ -182,6 +187,7 @@ public class Settle {
 		out.println("}\r\n");
 		return targets;
 	}
+
 	/**
 	 * 去掉一个字的对象
 	 * @param out
@@ -203,6 +209,7 @@ public class Settle {
 		out.println("}\r\n");
 		return targets;
 	}
+
 	/**
 	 * 去掉包含特殊字符的对象
 	 * @param out

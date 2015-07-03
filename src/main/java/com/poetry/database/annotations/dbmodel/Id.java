@@ -27,8 +27,6 @@ import java.lang.annotation.Target;
 @Target( { ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Id {
-	/**
-	 * 列名.
-	 */
+	/** 列名. */
 	public String value() default "";
 }

@@ -13,7 +13,7 @@ import com.poetry.database.annotations.dbmodel.Table;
 import com.poetry.database.util.AfStringUtil;
 /**
  * db.annotation 解释器
- * @author scwang
+ * @author 树朾
  */
 public class Interpreter {
 	
@@ -29,6 +29,7 @@ public class Interpreter {
 				&& !Modifier.isTransient(modify) 
 				&& !field.isAnnotationPresent(DbIgnore.class);
 	}
+
 	/**
 	 * 获取field的列名称
 	 * @param field
@@ -50,6 +51,7 @@ public class Interpreter {
 		}
 		return field.getName();
 	}
+
 	/**
 	 * 获取clazz数据表名称
 	 * @param clazz
@@ -65,6 +67,7 @@ public class Interpreter {
 		}
 		return clazz.getSimpleName();
 	}
+
 	/**
 	 * 获取clazz的主键ID名称
 	 * @param clazz

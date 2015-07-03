@@ -9,8 +9,8 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 /**
  * @ClassName: JdbcUtils2
- * @Description: 数据库连接工具类
- * @author: 孤傲苍狼
+ * 数据库连接工具类
+ * @author 孤傲苍狼
  * @date: 2014-10-4 下午6:04:36
  *
  */
@@ -28,7 +28,7 @@ public class C3P0Factory {
 
 	/**
 	 * @Method: getConnection
-	 * @Description: 从数据源中获取数据库连接
+	 * 从数据源中获取数据库连接
 	 * @Anthor:孤傲苍狼
 	 * @return Connection
 	 * @throws SQLException
@@ -48,7 +48,7 @@ public class C3P0Factory {
 	/**
 	 * @throws SQLException
 	 * @Method: startTransaction
-	 * @Description: 开启事务
+	 * 开启事务
 	 * @Anthor:孤傲苍狼
 	 */
 	public static void startTransaction() throws SQLException {
@@ -107,7 +107,7 @@ public class C3P0Factory {
 
 	/**
 	 * @Method: getDataSource
-	 * @Description: 获取数据源
+	 * 获取数据源
 	 * @Anthor:孤傲苍狼
 	 * @return DataSource
 	 */
